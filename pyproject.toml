@@ -5,6 +5,7 @@ description = "My solutions for advent of code 2025"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "advent-of-code-data>=2.1.0",
     "icecream>=2.1.8",
     "jupyterlab>=4.5.0",
     "jupyterlab-ariakedark-theme>=0.2.3",

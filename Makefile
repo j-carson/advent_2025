@@ -7,8 +7,6 @@ help:
 setup: ## Sets up jupyter, aoc, template, etc. using uv
 	uv sync
 	uv run npm install -g --prefix ./.venv bash-language-server pyright sql-language-server unified-language-server vscode-json-languageserver-bin yaml-language-server
-	uv run npm install -g --prefix ./.venv  @jakzo/aoc
-	cp wip.py .venv/lib/node_modules/\@jakzo/aoc/templates/python
 	uv run pre-commit install
 
 jupyter: ## Start jupyter alb
@@ -16,10 +14,3 @@ jupyter: ## Start jupyter alb
 
 clean: ## Blow away venv to start over
 	rm -r .venv
-
-
-get-day-%: ## Print the problem for day "%" and wait for answers
-	uv run aoc -y $(YEAR) -d $(@:get-day-%=%)
-
-solve-day-%: ## Start solving day "%"
-	uv run aoc start -y $(YEAR) -d $(@:solve-day-%=%) python

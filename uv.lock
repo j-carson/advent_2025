@@ -11,6 +11,7 @@ name = "advent-2025"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "advent-of-code-data" },
     { name = "icecream" },
     { name = "jupyterlab" },
     { name = "jupyterlab-ariakedark-theme" },
@@ -29,6 +30,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "advent-of-code-data", specifier = ">=2.1.0" },
     { name = "icecream", specifier = ">=2.1.8" },
     { name = "jupyterlab", specifier = ">=4.5.0" },
     { name = "jupyterlab-ariakedark-theme", specifier = ">=0.2.3" },
@@ -46,6 +48,22 @@ requires-dist = [
 ]
 
 [[package]]
+name = "advent-of-code-data"
+version = "2.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aocd-example-parser" },
+    { name = "beautifulsoup4" },
+    { name = "pebble" },
+    { name = "tzdata", marker = "sys_platform == 'win32'" },
+    { name = "urllib3" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c2/ba/90939f2d091ef220a09d2a24e56b6296ac442428be1051bcdc9125a79054/advent_of_code_data-2.1.0.tar.gz", hash = "sha256:947e6583f581ed184873aac835b333fc39a5712cce606c67532f9d43253a98e2", size = 47624, upload-time = "2025-01-04T04:53:57.747Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8f/fe/47de97c2473539c14a1041297ae9807539372be08ccaf3b645fa21af1930/advent_of_code_data-2.1.0-py3-none-any.whl", hash = "sha256:1e0457338a9572e610f72da8aad8b06f778311a69b0ec676bf2e5db8328f4d45", size = 39468, upload-time = "2025-01-04T04:53:55.321Z" },
+]
+
+[[package]]
 name = "anyio"
 version = "4.12.0"
 source = { registry = "https://pypi.org/simple" }
@@ -55,6 +73,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/16/ce/8a777047513153587e5434fd752e89334ac33e379aa3497db860eeb60377/anyio-4.12.0.tar.gz", hash = "sha256:73c693b567b0c55130c104d0b43a9baf3aa6a31fc6110116509f27bf75e21ec0", size = 228266, upload-time = "2025-11-28T23:37:38.911Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7f/9c/36c5c37947ebfb8c7f22e0eb6e4d188ee2d53aa3880f3f2744fb894f0cb1/anyio-4.12.0-py3-none-any.whl", hash = "sha256:dad2376a628f98eeca4881fc56cd06affd18f659b17a747d3ff0307ced94b1bb", size = 113362, upload-time = "2025-11-28T23:36:57.897Z" },
+]
+
+[[package]]
+name = "aocd-example-parser"
+version = "2024.12.25"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/85/73/4dc4b85442fac53784887d4952e61123798999dd68b41c28db2517e12592/aocd_example_parser-2024.12.25.tar.gz", hash = "sha256:51aa57aee98026164c063ffd943cb9a488787fd2d19779362bea04f9cd386984", size = 14682, upload-time = "2025-01-09T05:03:45.631Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/62/3c/e14435d3dd6a93ef81b8160ad0957c9eef2cc2eb9bf2019c47d853826120/aocd_example_parser-2024.12.25-py3-none-any.whl", hash = "sha256:6447dfb0b7d89bd901ed1c99d6c1c8d74a3b519b81f3db0e4116ca0ba9f5cb08", size = 13162, upload-time = "2025-01-09T05:03:43.388Z" },
 ]
 
 [[package]]
@@ -1200,6 +1227,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d4/de/53e0bcf53d13e005bd8c92e7855142494f41171b34c2536b86187474184d/parso-0.8.5.tar.gz", hash = "sha256:034d7354a9a018bdce352f48b2a8a450f05e9d6ee85db84764e9b6bd96dafe5a", size = 401205, upload-time = "2025-08-23T15:15:28.028Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/16/32/f8e3c85d1d5250232a5d3477a2a28cc291968ff175caeadaf3cc19ce0e4a/parso-0.8.5-py2.py3-none-any.whl", hash = "sha256:646204b5ee239c396d040b90f9e272e9a8017c630092bf59980beb62fd033887", size = 106668, upload-time = "2025-08-23T15:15:25.663Z" },
+]
+
+[[package]]
+name = "pebble"
+version = "5.1.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/af/aa/730e2b815fed3680629bb9c6c84c3480952fb9067939b7549c789b77a6bc/pebble-5.1.3.tar.gz", hash = "sha256:9fdf00dde4abb09907817114ad8cf822836b6d6cc8f43a3f0ec741be276086e7", size = 39027, upload-time = "2025-07-30T21:16:34.87Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/42/42/218f3d1490af0c5f781f1e54fc1e4a2ca163643807d57890d2a246bd626d/Pebble-5.1.3-py3-none-any.whl", hash = "sha256:8b28b1ede25de4b0d9249516d5fd794c330f8f03b692debe374619317ed0bdd7", size = 36868, upload-time = "2025-07-30T21:16:33.133Z" },
 ]
 
 [[package]]
