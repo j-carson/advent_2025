@@ -14,3 +14,10 @@ jupyter: ## Start jupyter alb
 
 clean: ## Blow away venv to start over
 	rm -r .venv
+
+get-day-%: ## Get input for day %
+	$(eval directory := $(shell printf %02d $(@:get-day-%=%)))
+	test -d $(directory) || mkdir $(directory)
+	test -f $(directory)/input.py || uv run aocd $(@:get-day-%=%) $(YEAR) > $(directory)/input.txt
+	test -f $(directory)/watcher.py || cp watcher.py $(directory)
+	test -f $(directory)/wip.py || cp wip.py $(directory)
