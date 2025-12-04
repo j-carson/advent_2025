@@ -10,6 +10,7 @@ dependencies = [
     "jupyterlab>=4.5.0",
     "jupyterlab-ariakedark-theme>=0.2.3",
     "jupyterlab-git>=0.51.2",
+    "jupyterlab-lsp>=5.2.0",
     "jupyterlab-nord-theme>=0.1.1",
     "jupyterlab-vim>=4.1.4",
     "nodejs-wheel>=24.11.1",
