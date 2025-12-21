@@ -3,9 +3,10 @@ name = "advent-2025"
 version = "0.1.0"
 description = "My solutions for advent of code 2025"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13,<3.14"
 dependencies = [
     "advent-of-code-data>=2.1.0",
+    "bokeh>=3.8.1",
     "icecream>=2.1.8",
     "jupyterlab>=4.5.0",
     "jupyterlab-ariakedark-theme>=0.2.3",
@@ -13,6 +14,7 @@ dependencies = [
     "jupyterlab-lsp>=5.2.0",
     "jupyterlab-nord-theme>=0.1.1",
     "jupyterlab-vim>=4.1.4",
+    "matplotlib>=3.10.7",
     "nodejs-wheel>=24.11.1",
     "pandas>=2.3.3",
     "parse>=1.20.2",
